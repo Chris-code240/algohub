@@ -1,0 +1,22 @@
+{% load static %}
+<header class="container mx-auto bg-white">
+    <nav class="flex items-center justify-between">
+        <div class="logo">
+            <a href="/app/home/"><img src="{% static 'images/AlgoHub.svg' %}" alt=""></a>
+        </div>
+        <div class="hidden md:block space-x-6">
+            <a href="" class="text-2xl">About</a>
+            <a href="/app/start/"><button class="px-6 py-2 bg-Blue font-bold rounded-lg shadow-xl w-[10rem] text-white">Start</button></a>
+        </div>
+        <div id="hamburger" class="relative overflow-hidden  block md:hidden w-[2.5rem] h-[1.5rem] flex flex-col justify-between cursor-pointer">
+            <div class="w-[80%] bg-black h-[3px]"></div>
+            <div class="w-[80%] bg-black h-[3px]"></div>
+            <div class="w-[80%] bg-black h-[3px]"></div>
+        </div>
+    </nav>
+    <div class="hidden md:hidden flex flex-col space-y-4 w-ful text-center py-2" id="menu">
+        <a href="" class="text-2xl">About</a>
+        <a href="/app/start/" class="block w-full"><button class="px-6 py-2 bg-Blue font-bold rounded-lg shadow-xl w-full text-white">Start</button></a>
+    </div>
+</header>
+<script src="{% static 'js/nav.js' %}"></script>

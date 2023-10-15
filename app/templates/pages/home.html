@@ -1,0 +1,26 @@
+
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+<section class="container mx-auto w-full md:h-[65vh] my-6 h-full">
+    <div class="flex flex-col md:flex-row justify-center md:justify-between md:items-center w-full h-full">
+        <h1 class="h1 text-6xl font-bold my-2 md:hidden text-center">WELCOME</h1>
+        <div class="md:w-[48%] h-[50%] md:h-full">
+            <img src="{% static 'images/chatbot.jpeg' %}" class="w-full h-full" alt="">
+        </div>
+        <div class="flex flex-col space-y-6 md:w-[50%] text-center">
+            <h1 class="h1 text-6xl font-bold md:block hidden">WELCOME</h1>
+            <p class="text-2xl my-6">AlgoHub is a platform with tools to visualize
+                your algorithms</p>
+            
+                <a href="/app/start/"><button class="bg-Blue rounded-lg shadow-xl py-3 px-6 w-[15rem] text-white font-bold">Get Started</button></a>
+        </div>
+    </div>
+
+</section>
+<footer class="md:absolute bottom-0 container mx-auto my-2 md:my-0">
+    <div class="flex items-center justify-center w-full">
+        <img src="{% static 'images/Beads.svg' %}" alt="">
+    </div>
+</footer>
+{% endblock %}
